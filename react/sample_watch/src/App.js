@@ -14,7 +14,7 @@ class App extends Component {
   
   //コンポーネントがマウントされたときに実行される
     componentDidMount(){
-    this.timerID = setInterval(
+    this.interval = setInterval(
       () => this.clock(),
       //1秒間隔で実行されるように設定
       1000
