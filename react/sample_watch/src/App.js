@@ -22,7 +22,7 @@ class App extends Component {
   }
   
   //日付の更新
-  clock() {
+  clock = () => {
     this.setState({
       date: new Date()
     });
