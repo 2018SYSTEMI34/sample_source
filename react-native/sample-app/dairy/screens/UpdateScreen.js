@@ -100,10 +100,10 @@ export default class UpdateScreen extends React.Component {
           onCancel={this.hideDateTimePicker}
         />
         <View style={styles.title}>
-          <TextInput placeholder='title' onChangeText={this.onChangeTitle}/>
+          <TextInput placeholder='title' onChangeText={this.onChangeTitle} value={this.state.title}/>
         </View>
         <View style={styles.body}>
-          <TextInput placeholder='body' multiline={true} onChangeText={this.onChangeBody} />
+          <TextInput placeholder='body' multiline={true} onChangeText={this.onChangeBody} value={this.state.body} />
         </View>
         <Button title={'Change'} onPress={this.onClick} />
       </View>
